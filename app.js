@@ -50,7 +50,7 @@ passport.use(new LocalStrategy(User.authenticate())); // for login logout sessio
 
 //Configuring Google Strategy
 passport.use(
-  new GoogleStrategy(
+  /*new GoogleStrategy(
     {
       clientID: process.env.GA_clientID,
       clientSecret: process.env.GA_clientSecret,
@@ -67,7 +67,7 @@ passport.use(
         return done(err, user);
       });
     }
-  )
+  )*/
 );
 
 //SERIALIZE AND DESERIALIZING
